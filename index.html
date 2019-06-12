@@ -441,6 +441,16 @@ As you work on your android application, expanding on the already existing featu
         x.style.display = "none";
       }
     }
+	    
+function toggleFunction() {
+    var x = document.getElementById("nav");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
     </script>
   </body>
 </html>
