@@ -45,6 +45,9 @@ nav {
   text-align: center;
 }
 
+.navTog{
+}
+	
 nav li {
   list-style: none;
   display: inline;
@@ -157,7 +160,7 @@ img:hover{
   <!-- Navigation bar -->
 <header>
   <div>
-    <nav>
+    <nav class="navTog">
       <ul>
         <li><a onClick="dropFunction()">Overview</a></li>
         <li><a onClick = "dropFunctionA()">Installation</a></li>
@@ -443,7 +446,7 @@ As you work on your android application, expanding on the already existing featu
     }
 	    
 function toggleFunction() {
-    var x = document.getElementById("nav");
+    var x = document.getElementById("navTog");
     if (x.className.indexOf("show") == -1) {
         x.className += " show";
     } else {
